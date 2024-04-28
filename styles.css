@@ -6,16 +6,34 @@ body {
   flex-direction: column;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+p {
+  margin: 0;
+}
+
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   height: 100px;
+  padding: 20px;
 }
 
 .footer {
-  height: 100px;
-  background-color: aqua;
+  height: 80px;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eeeeee;
+  border-radius: 5px;
 }
 
 .main {
@@ -23,7 +41,7 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   flex: 1;
-  padding: 20px 0;
+  padding: 20px;
 }
 
 .post-card-container {
@@ -34,4 +52,121 @@ body {
   border-radius: 5px;
   height: 200px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.search-icon {
+  cursor: pointer;
+}
+
+.blog-detail-main {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  line-height: 20px;
+  padding-bottom: 30px;
+}
+
+.right-about {
+  background-color: whitesmoke;
+}
+
+.right-about,
+.right-archive,
+.right-other {
+  padding: 10px 15px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  line-height: 20px;
+}
+
+.blog-detail-right {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.blog-detail-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.blog-detail-right h3 {
+  font-style: italic;
+}
+
+.archive-links {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.blog-detail-title {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.short-description {
+  padding: 20px 0;
+  border-bottom: 1px solid #dddddd;
+}
+
+.blog-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.mock-content {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.text-with-border {
+  border: 1px solid #dddddd;
+  padding-bottom: 20px;
+}
+
+.text-code {
+  border: 1px solid #dddddd;
+  font-family: Consolas;
+}
+
+.text-small {
+  font-size: 14px;
+}
+
+.post-heading  {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  background-color: transparent;
+  border-color: #DDDDDD;
+  color: #DDDDDD;
+  cursor: pointer;
+}
+
+.btn-active {
+  color: #008DDA;
+  border-color: #008DDA;
+}
+
+@media only screen and (max-width: 767px) {
+  /* Styles for mobile devices */
+  body {
+    padding: 0 3%;
+  }
+  .main, .blog-detail-main {
+    grid-template-columns: 1fr;
+  }
 }

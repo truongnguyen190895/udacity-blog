@@ -81,3 +81,11 @@
 .category-world {
   color: #5356FF
 }
+
+.text-grey {
+  color: grey;
+}
+
+.text-large {
+  font-size: 30px;
+}
