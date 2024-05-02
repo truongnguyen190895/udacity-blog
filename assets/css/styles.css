@@ -150,14 +150,37 @@ p {
   font-size: 14px;
 }
 
-.post-heading  {
+.post-heading {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 
+.avatar {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.avatar img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-about {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
 .post-card-date {
   font-style: italic;
+}
+
+figure {
+  margin: 0;
 }
 
 @media only screen and (max-width: 767px) {
@@ -165,7 +188,8 @@ p {
   body {
     padding: 0 3%;
   }
-  .main, .blog-detail-main {
+  .main,
+  .blog-detail-main {
     grid-template-columns: 1fr;
   }
-} 
+}
