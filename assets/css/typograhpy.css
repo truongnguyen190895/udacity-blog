@@ -70,22 +70,6 @@
   font-style: italic;
 }
 
-.text-underline {
-  text-decoration: underline;
-}
-
-.category-design {
-  color: #41B06E
-}
-
-.category-world {
-  color: #5356FF
-}
-
-.text-grey {
-  color: grey;
-}
-
 .text-large {
   font-size: 30px;
 }
